@@ -1,8 +1,29 @@
-During this demo we will
+We can assume the user is following this steps using RHEL8 (maybe a Windows 10 or Mac version of this demo? coming soon???)
 
-1) install ansible
-2) prepare an ISO file
-3) specify environment variables in the playbook
-4) create the virtual machine
-5) install RHEL8 using the ISO
-6) post-config and install/setup Red Hat Insights to run 
+
+# During this demo we will
+
+### 1) Install ansible 
+
+
+### 2) Prepare an ISO file (How to link)
+
+
+### 3) Specify environment variables in the playbook
+
+
+### 4) Create the virtual machine
+
+
+### 5) Install RHEL8 using the ISO
+
+
+### 6) Post-config and install/setup Red Hat Insights to run
+
+The purpose of this demo is to automate a RHEL8 Virtual Machine installation using Ansible and run RH Insights.
+
+
+# What is...
+* Ansible
+* RHEL8
+* Smart Management (Insights)
