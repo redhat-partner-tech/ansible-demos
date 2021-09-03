@@ -1,0 +1,8 @@
+During this demo we will
+
+1) install ansible
+2) prepare an ISO file
+3) specify environment variables in the playbook
+4) create the virtual machine
+5) install RHEL8 using the ISO
+6) post-config and install/setup Red Hat Insights to run 
