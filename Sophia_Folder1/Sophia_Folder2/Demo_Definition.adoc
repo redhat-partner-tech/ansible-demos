@@ -1,12 +1,12 @@
 We can assume the user is following this steps using RHEL8 (maybe a Windows 10 or Mac version of this demo? coming soon???)
 
 
-# During this demo we will
+# During this demo we will... (Define steps better)
 
-### 1) Install ansible 
+### 1) Install ansible ("WHat is Ansible/How to install Link)
 
 
-### 2) Prepare an ISO file (How to link)
+### 2) Prepare an ISO file ("How to" link)
 
 
 ### 3) Specify environment variables in the playbook
@@ -26,4 +26,15 @@ The purpose of this demo is to automate a RHEL8 Virtual Machine installation usi
 # What is...
 * Ansible
 * RHEL8
+* Virt
 * Smart Management (Insights)
+
+
+TO DO---
+Add screetshots and documentation
+Complete informational linked pages
+
+
+EXTRAS---
+do these steps on a different operating system and document steps
+find a different/more efficient method to do this
