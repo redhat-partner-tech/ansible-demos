@@ -1,6 +1,6 @@
-During this demo we will
+= During this demo we will
 
-1) install ansible
+*** 1) install ansible
 2) prepare an ISO file
 3) specify environment variables in the playbook
 4) create the virtual machine
