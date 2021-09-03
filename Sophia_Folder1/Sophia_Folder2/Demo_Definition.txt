@@ -1,4 +1,21 @@
-## During this demo we will
+= Advanced Technical Training
+--------------------------------
+=============================================================================
+[.text-left]
+**Red Hat O.P.E.N. Training System Catalog**
+
+NOTE: Red Hat Online Partner Enablement Network (OPEN) helps partners build skills to generate more sales and enhance customer satisfaction. This training is complimentary for Red Hat Partners.
+=============================================================================
+=============================================================================
+**Click on the links below to gain access to each training category**
+====================================
+---
+=======================================
+
+=============================================================================
+**link:https://connect.redhat.com/en/training/course-catalog[Role-based Accreditations:]**
+
+During this demo we will
 
 1) install ansible
 2) prepare an ISO file
