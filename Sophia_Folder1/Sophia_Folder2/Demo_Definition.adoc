@@ -31,10 +31,12 @@ The purpose of this demo is to automate a RHEL8 Virtual Machine installation usi
 
 
 TO DO---
-Add screetshots and documentation
-Complete informational linked pages
+
+* Add screetshots and documentation for beginning steps
+* Complete informational linked pages
 
 
 EXTRAS---
-do these steps on a different operating system and document steps
-find a different/more efficient method to do this
+
+* do these steps on a different operating system and document steps
+* find a different/more efficient method to do this
