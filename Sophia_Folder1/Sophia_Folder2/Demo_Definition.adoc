@@ -3,13 +3,13 @@ We can assume the user is following this steps using RHEL8 (maybe a Windows 10 o
 
 # During this demo we will... (Define steps better)
 
-### 1) Install ansible ("WHat is Ansible/How to install Link)
+### 1) Install ansible ("What is Ansible/How to install Link to documentation (already made) and then re-summarize with some screenshots and thoughts to walk through it)
 
 
 ### 2) Prepare an ISO file ("How to" link)
 
 
-### 3) Specify environment variables in the playbook
+### 3) Specify environment variables in the playbook 
 
 
 ### 4) Create the virtual machine
@@ -20,7 +20,7 @@ We can assume the user is following this steps using RHEL8 (maybe a Windows 10 o
 
 ### 6) Post-config and install/setup Red Hat Insights to run
 
-The purpose of this demo is to automate a RHEL8 Virtual Machine installation using Ansible and run RH Insights.
+The purpose of this demo is to automate a RHEL8 Virtual Machine installation using Ansible and run RH Insights. 
 
 
 # What is...
