@@ -1,10 +1,14 @@
-We can assume the user is following this steps using RHEL8 (maybe a Windows 10 or Mac version of this demo? coming soon???)
+NOTE: We can assume the user is following this steps using the most up to date version of RHEL8
+
+### 1) If you already have Ansible installed, you can skip this step
+
+Go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
 
 
-# During this demo we will... (Define steps better)
+To install Ansible, type the following command into a command prompt
 
-### 1) Install ansible ("What is Ansible/How to install Link to documentation (already made) and then re-summarize with some screenshots and thoughts to walk through it)
-
+   $ sudo yum install ansible  
+(PUT SCREENSHOT OF THIS COMMAND AND OUTPUT)
 
 ### 2) Prepare an ISO file ("How to" link)
 
