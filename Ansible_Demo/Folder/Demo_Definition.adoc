@@ -7,6 +7,12 @@ NOTE: We can assume the user is carrying out this demo using the most up to date
 You can ensure your system is up to date by running the following command in a command prompt
 
    $ sudo yum update
+   
+// image::images/content-hub-menu-filter.jpg[]
+
+You'll know your system is completely updated when you see the messsage saying
+
+   Complete!
 
 ## Ansible
 Ansible is an automation platform that automates cumbersome, repetitive or complex tasks. The purpose of this demo is to automate a RHEL 8 Virtual Machine installation using Ansible and then run RH Insights. 
@@ -16,6 +22,8 @@ If you don't have Ansible installed, go to the Ansible Installation Guide linked
 Or just run the following command into a command prompt
 
    $ sudo yum install ansible  
+   
+// image::images/content-hub-menu-filter.jpg[]
 
 ## How to Prepare an ISO File Using Kickstart
 
