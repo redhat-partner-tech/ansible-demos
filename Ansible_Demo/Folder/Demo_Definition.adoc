@@ -1,10 +1,10 @@
 (create a purpose of this demo documentation list)...
 
 Overview of demo
-- Why this exists
-- Outcome/end-result of running demo
-- Products/technology used
-- Steps to re-create/build
+* Why this exists
+* Outcome/end-result of running demo
+* Products/technology used
+* Steps to re-create/build
 
 
 
