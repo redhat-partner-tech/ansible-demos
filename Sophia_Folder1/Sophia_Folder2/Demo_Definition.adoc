@@ -1,46 +1,58 @@
-NOTE: We can assume the user is following this steps using the most up to date version of RHEL8
+## RHEL8
 
-### 1) If you already have Ansible installed, you can skip this step
+Red Hat Enterprise Linux (RHEL) is Red Hat's commercialized Linux distribution.
 
-Go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
+NOTE: We can assume the user is carrying out this demo using the most up to date version of RHEL8. 
 
+You can ensure your system is up to date by running the following command in a command prompt
 
-To install Ansible, type the following command into a command prompt
+   $ sudo yum update
+
+## Ansible
+Ansible is an automation platform that automates cumbersome, repetitive or complex tasks. The purpose of this demo is to automate a RHEL 8 Virtual Machine installation using Ansible and then run RH Insights. 
+
+If you don't have Ansible installed, go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
+
+Or just run the following command into a command prompt
 
    $ sudo yum install ansible  
-(PUT SCREENSHOT OF THIS COMMAND AND OUTPUT)
 
-### 2) Prepare an ISO file ("How to" link)
+## How to Prepare an ISO File Using Kickstart
 
-
-### 3) Specify environment variables in the playbook 
+Use Kickstart to automate RHEL installation...
 
 
-### 4) Create the virtual machine
+https://access.redhat.com/labsinfo/kickstartconfig
 
 
-### 5) Install RHEL8 using the ISO
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/performing_an_advanced_rhel_installation/creating-kickstart-files_installing-rhel-as-an-experienced-user
+
+## Virt-Manager
+
+Virt-manager is a desktop application that manages all of your virtual machines.
+
+Using a virtual machine is ideal for testing out applications (such as Insights) as it gives the user an environment that is low risk. If the virtual machine crashes while the user is testing app functionality, another virtual machine can be made with no ill effects on the actual hardware system.
 
 
-### 6) Post-config and install/setup Red Hat Insights to run
 
-The purpose of this demo is to automate a RHEL8 Virtual Machine installation using Ansible and run RH Insights. 
+## link:https://www.redhat.com/en/technologies/management/smart-management[Smart Management] (Insights)
 
+Red Hat Smart Management allows the user to securely manage their RHEL environment using Red Hat Satellite and Red Hat Insights. Smart Management spans across environments, can manage at scale, and can protect your environment from security threats. We will be focusing on Red Hat Insights for this demo.
 
-# What is...
-* Ansible
-* RHEL8
-* Virt
-* Smart Management (Insights)
+Insights is applicable for any system in your organization that needs frequent system checks and is included with a RHEL subscription. Insights helps to identify and remediate threats to security, performance, availability, and stability to avoid issues, outages, and unplanned downtime, and to ensure your Red Hat environment is operating optimally. 
 
 
-TO DO---
 
-* Add screetshots and documentation for beginning steps
-* Complete informational linked pages
+// ### 3) Specify environment variables in the playbook 
 
 
-EXTRAS---
+// ### 4) Create the virtual machine
 
-* do these steps on a different operating system and document steps
-* find a different/more efficient method to do this
+
+// ### 5) Install RHEL8 using the ISO
+
+
+// ### 6) Post-config and install/setup Red Hat Insights to run
+
+// two part playbook-- one playbook to install virt-manager and configure it properly and 
+// one playbook to install the RHEL 8 vm and configure Insights to work on it :)
