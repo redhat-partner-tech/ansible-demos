@@ -2,7 +2,7 @@
 
 Red Hat Enterprise Linux (RHEL) is Red Hat's commercialized Linux distribution.
 
-NOTE: We can assume the user is carrying out this demo using the most up to date version of RHEL8. 
+NOTE: We can assume the user is carrying out this demo using the most up to date version of RHEL 8. 
 
 You can ensure your system is up to date by running the following command in a command prompt
 
