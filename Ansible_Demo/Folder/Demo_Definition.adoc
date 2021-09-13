@@ -2,15 +2,15 @@
 
 Overview of demo
 
-* Why this exists
+* Why this exists (add a big paragraph at the beginning to define the whole purpose)
 
 * Outcome/end-result of running demo
 
 * Products/technology used
 
-* Requirements
+* Requirements (list at top)
 
-* Steps to re-create/build
+* Steps to re-create/build (add numbered list)
 
 
 
@@ -79,5 +79,3 @@ Insights is applicable for any system in your organization that needs frequent s
 
 // ### 6) Post-config and install/setup Red Hat Insights to run
 
-// two part playbook-- one playbook to install virt-manager and configure it properly and 
-// one playbook to install the RHEL 8 vm and configure Insights to work on it :)
