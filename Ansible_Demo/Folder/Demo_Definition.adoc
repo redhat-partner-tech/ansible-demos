@@ -8,6 +8,8 @@ Overview of demo
 
 * Products/technology used
 
+* Requirements
+
 * Steps to re-create/build
 
 
