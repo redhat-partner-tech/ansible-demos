@@ -43,7 +43,11 @@ Insights is applicable for any system in your organization that needs frequent s
 
 ## Requirements to run this demo
 
-* An up to date version of RHEL 8
+* An up to date version of RHEL 8 on a laptop or client system
+
+* TO DO: list memory allocation size
+
+* sudo access to your system
 
 ## STEPS
 
