@@ -49,6 +49,8 @@ Insights is applicable for any system in your organization that needs frequent s
 
 * sudo access to your system
 
+* Installation media (USB drive, CD)
+
 ## STEPS
 
 1) First, make sure your system is up to date. You can ensure your system is up to date by running the following command in a command prompt
@@ -71,12 +73,12 @@ Or just run the following command into a command prompt
 
 // Use Kickstart to automate RHEL installation...
 
-https://access.redhat.com/labsinfo/kickstartconfig
+// https://access.redhat.com/labsinfo/kickstartconfig
 
 
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/performing_an_advanced_rhel_installation/creating-kickstart-files_installing-rhel-as-an-experienced-user
+// https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/performing_an_advanced_rhel_installation/creating-kickstart-files_installing-rhel-as-an-experienced-user
 
-TO DO: link to where to get the RHEL 8 file
+Download the ISO  link:https://developers.redhat.com/products/rhel/download[here]
 
 * Create a Kickstart file.
 
