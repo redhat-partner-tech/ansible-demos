@@ -1,10 +1,17 @@
-## Purpose
+## Using Ansible to Install a RHEL 8 VM Running RH Insights
 
-The purpose of this demo is to familiarize the user with the deployment of applications with Ansible and show the user how they can run RH Insights on a virtualized RHEL 8 environment.
+The purpose of this demo is to familiarize the user with the deployment of applications with Ansible and show the user how they can run RH Insights on a virtualized RHEL 8 environment. At the end of this demo, the user should be more familiar with Ansible and how to deploy a virtual machine using an Ansible playbook
+
 
 ## The end result of running this demo
 
-At the end of this demo, the user should 
+After running this demo, the user should have
+
+* Installed Ansible
+
+* Installed RH Virt-manager (a virtual mahcine environment running RHEL 8)
+
+* RH Insights ready to use on the RHEL 8 VM
 
 ## Products/Technology used
 
@@ -13,9 +20,12 @@ At the end of this demo, the user should
 Red Hat Enterprise Linux (RHEL) is Red Hat's commercialized Linux distribution.
 
 ### Ansible
+
 Ansible is an automation platform that automates cumbersome, repetitive or complex tasks. The purpose of this demo is to automate a RHEL 8 Virtual Machine installation using Ansible and then run RH Insights. 
 
 ### Kickstart
+
+A kickstart file is a simple text file that contains configuration information for a Red Hat Enterprise Linux installation.
 
 ### Virt-Manager
 
@@ -33,25 +43,19 @@ Insights is applicable for any system in your organization that needs frequent s
 
 ## Requirements to run this demo
 
-* An 
-*
-
+* An up to date version of RHEL 8
 
 ## STEPS
 
-1) NOTE: We can assume the user is carrying out this demo using the most up to date version of RHEL 8. 
-
-You can ensure your system is up to date by running the following command in a command prompt
+1) First, make sure your system is up to date. You can ensure your system is up to date by running the following command in a command prompt
 
    $ sudo yum update
    
-
-
 You'll know your system is completely updated when you see the messsage saying
 
    Complete!
 
-2) If you don't have Ansible installed, go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
+2) Second, install Ansible. If you already have Ansible installed, you can skip this step. If you don't have Ansible installed, go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
 
 Or just run the following command into a command prompt
 
@@ -59,49 +63,44 @@ Or just run the following command into a command prompt
    
 // image::images/content-hub-menu-filter.jpg[]
 
-3) How to Prepare an ISO File Using Kickstart
+3) Prepare an ISO File Using Kickstart
 
-Use Kickstart to automate RHEL installation...
-
+// Use Kickstart to automate RHEL installation...
 
 https://access.redhat.com/labsinfo/kickstartconfig
 
 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/performing_an_advanced_rhel_installation/creating-kickstart-files_installing-rhel-as-an-experienced-user
 
-3)
+* Create a Kickstart file.
 
-4)
+* Make the Kickstart file available on removable media, a hard drive or a network location.
 
-5)
+* Create boot media, which will be used to begin the installation.
 
-(create a purpose of this demo documentation list)...
+* Make the installation source available.
 
-Overview of demo
+* Start the Kickstart installation.
 
-* Why this exists (add a big paragraph at the beginning to define the whole purpose)
+3) ...
 
-* Outcome/end-result of running demo
+4) ...
 
-* Products/technology used
+5) ... All Done!
 
-* Requirements (list at top)
-
-* Steps to re-create/build (add numbered list)
-
-
+// (create a purpose of this demo documentation list)...
+// Overview of demo
+// * Why this exists (add a big paragraph at the beginning to define the whole purpose)
+// * Outcome/end-result of running demo
+// * Products/technology used
+// * Requirements (list at top)
+// * Steps to re-create/build (add numbered list)
 
 
 
 
 // ### 3) Specify environment variables in the playbook 
-
-
 // ### 4) Create the virtual machine
-
-
 // ### 5) Install RHEL8 using the ISO
-
-
 // ### 6) Post-config and install/setup Red Hat Insights to run
 
