@@ -1,8 +1,10 @@
 ## Purpose
 
+The purpose of this demo is to familiarize the user with the deployment of applications with Ansible and show the user how they can run RH Insights on a virtualized RHEL 8 environment.
+
 ## The end result of running this demo
 
-At the end of this demo, 
+At the end of this demo, the user should 
 
 ## Products/Technology used
 
@@ -21,8 +23,6 @@ Virt-manager is a desktop application that manages all of your virtual machines.
 
 Using a virtual machine is ideal for testing out applications (such as Insights) as it gives the user an environment that is low risk. If the virtual machine crashes while the user is testing app functionality, another virtual machine can be made with no ill effects on the actual hardware system.
 
-
-
 ### link:https://www.redhat.com/en/technologies/management/smart-management[Smart Management] (Insights)
 
 Red Hat Smart Management allows the user to securely manage their RHEL environment using Red Hat Satellite and Red Hat Insights. Smart Management spans across environments, can manage at scale, and can protect your environment from security threats. We will be focusing on Red Hat Insights for this demo.
@@ -32,6 +32,10 @@ Insights is applicable for any system in your organization that needs frequent s
 
 
 ## Requirements to run this demo
+
+* An 
+*
+
 
 ## STEPS
 
