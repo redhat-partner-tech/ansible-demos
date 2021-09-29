@@ -1,0 +1,28 @@
+---
+- name: Install system updates for RHEL system
+  yum:
+   name: '*'
+   state: latest
+   update_cache: yes
+       #cache_valid_time: 3600
+  when:
+   - ansible_os_family == "RedHat"
+   - ansible_distribution == "RHEL"
+
+
+
+
+
+- name: this playbook will install {{ virt-manager }}
+  hosts: web
+  vars:
+    virt-manager: at
+  tasks:
+    - name: this is the task to install {{ virt-manager }}
+      yum:
+        name: "{{ virt-manager }}"
+        state: latest
+
+- name: Create a RHEL VM
+
+- name: Turn on the VM
