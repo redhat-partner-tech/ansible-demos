@@ -1,3 +1,8 @@
+
+ image::Images/Log_Into_RH_Account.png[]
+
+
+
 ## Using Ansible to Install a RHEL 8 VM Running RH Insights
 
 The purpose of this demo is to familiarize the user with the deployment of applications with Ansible and show the user how they can run RH Insights on a virtualized RHEL 8 environment. At the end of this demo, the user should be more familiar with Ansible and how to deploy a virtual machine using an Ansible playbook
@@ -90,7 +95,6 @@ Download the ISO  link:https://developers.redhat.com/products/rhel/download[here
 * Make the installation source available.
 
 * Start the Kickstart installation.
-
 
 
 // (create a purpose of this demo documentation list)...
