@@ -1,5 +1,5 @@
 
- image::Ansible_Demo/Images/Log_Into_RH_Account.png[]
+ image::images/Log_Into_RH_Account.png[]
 
 
 
