@@ -1,28 +1,53 @@
 ---
-- name: Install system updates for RHEL system
-  yum:
-   name: '*'
-   state: latest
-   update_cache: yes
-       #cache_valid_time: 3600
-  when:
-   - ansible_os_family == "RedHat"
-   - ansible_distribution == "RHEL"
-
-
-
-
-
-- name: this playbook will install {{ virt-manager }}
-  hosts: web
-  vars:
-    virt-manager: at
-  tasks:
-    - name: this is the task to install {{ virt-manager }}
+- name: this is the task to install virt-manager
       yum:
-        name: "{{ virt-manager }}"
-        state: latest
+        name: virt-manager
+        state: install
+        
+- name: Create an ISO using Kickstart
+  hosts: all
+  become: no
+  connection: local
 
+  tasks:
+  - name: create kickstart file
+    template:
+      src: kickstart.cfg.j2
+      dest: "{{ playbook_dir }}/build/{{ inventory_hostname }}.cfg"
+      
 - name: Create a RHEL VM
+  hosts: kvm
+  tags: provision
+  vars:
+    kvm_vm_hostname: "vm1.example.com"
+    kvm_vm_public_ip: 192.168.122.10
+    kvm_vm_root_pwd: "p@ssw0rd"
+    kvm_vm_base_img: rhel-guest-image-7.qcow2
+    kvm_vm_vcpus: "2"
+    kvm_vm_ram: "4096"
+    kvm_vm_os_disk_name: "{{ kvm_vm_hostname }}"
+    kvm_vm_os_disk_size: "10G"
+    kvm_vm_nics:
+      - name: eth0
+        bootproto: static
+        onboot: yes
+        ip: "{{ kvm_vm_public_ip }}"
+        prefix: "24"
+        gateway: "192.168.122.1"
+        dns_server: "192.168.122.1"
+        config: "--type network --source default --model virtio"
+  tasks:
+    - name: Create KVM VM
+      include_role:
+        name: RedHatGov.kvm-vm
+        
+
+- name: Prepare Insights to run on VM
+
 
 - name: Turn on the VM
+    command: "virsh start {{ kvm_vm_hostname }}"
+    register: virsh_start_results
+    changed_when: '"started" in virsh_start_results.stdout'
+
+
