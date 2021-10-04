@@ -15,6 +15,10 @@
       src: kickstart.cfg.j2
       dest: "{{ playbook_dir }}/build/{{ inventory_hostname }}.cfg"
       
+- name: Build ISO
+
+- name: Upload the ISO  
+      
 - name: Create a RHEL VM
   hosts: kvm
   tags: provision
