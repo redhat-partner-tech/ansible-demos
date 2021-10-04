@@ -80,6 +80,7 @@ Or just run the following command into a command prompt
 
 Download the ISO  link:https://developers.redhat.com/products/rhel/download[here]
 
+
 * Create a Kickstart file.
 
 * Make the Kickstart file available on removable media, a hard drive or a network location.
@@ -90,11 +91,7 @@ Download the ISO  link:https://developers.redhat.com/products/rhel/download[here
 
 * Start the Kickstart installation.
 
-3) ...
 
-4) ...
-
-5) ... All Done!
 
 // (create a purpose of this demo documentation list)...
 // Overview of demo
