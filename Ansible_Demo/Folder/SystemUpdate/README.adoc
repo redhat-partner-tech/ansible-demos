@@ -1,16 +1,1 @@
-NOTES FOR SELF
 
-Each file contains the name of the types of files that you would find
-
-ie: 
-"systemupdate" folder is the base directory and contains system updates
-"roles" contains roles... with Ansible you have a playbook (which runs roles) and the roles perform a specific operations (this role updated the yum pkgmgr)
-"sysupdaterole" 
-"tasks" file contains the main.yml (which is the main file for your task), tasks are assigned to the roles and only that specific role can run the task (the reason why you have to reference the role when you assign the task)
-
-
-the "hosts" file is going to be parsed in the ansible -i localhosts, it knows to reference the host file and used localhosts as the host to run the playbook
-
-deploys the updatesystem.yml that is referencing the role 
-
-a user does not have to write sudo yum upgrade, they just set the parameters to their boolean values ("yes" means "true" or 1), when: 'RHEL' allows the system to recognize that it is a RHEL update
