@@ -81,9 +81,7 @@ Or just run the following command into a command prompt
    $ sudo yum install ansible  
    
    
-// image::images/content-hub-menu-filter.jpg[]
-
-3) Prepare an ISO File
+3) Prepare an ISO File Using Kickstart
 
 // Use Kickstart to automate RHEL installation...
 
@@ -113,7 +111,15 @@ ifdef::env-github[]
 endif::[]
 
 
+* Create a Kickstart file.
 
+* Make the Kickstart file available on removable media, a hard drive or a network location.
+
+* Create boot media, which will be used to begin the installation.
+
+* Make the installation source available.
+
+* Start the Kickstart installation.
 
 
 // (create a purpose of this demo documentation list)...
