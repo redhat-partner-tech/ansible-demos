@@ -1,0 +1,47 @@
+
+1) First, make sure your system is up to date. You can ensure your system is up to date by running the following command in a command prompt
+
+   $ sudo yum update
+   
+The terminal will display any packages needed to be installed or updated and prompt you to approve the downloads. Follow the on screen prompts.
+   
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/RHEL8_Update00.png">
+</p>
+++++
+endif::[]
+
+You'll know your system is completely updated when you see the messsage saying
+
+   Complete!
+   
+2) Second, install Ansible. If you already have Ansible installed, you can skip this step. If you don't have Ansible installed, go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
+
+Or just run the following command into a command prompt
+
+   $ sudo yum install ansible  
+
+3) Prepare an ISO file by downloading the ISO link:https://developers.redhat.com/products/rhel/download[here]
+
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Download_ISO.png">
+</p>
+++++
+endif::[]
+
+The link will take you to a page allowing you to download the latest version of RHEL. Click the red download button and you will be redirected to the login page.
+
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Log_Into_RH_Account.png">
+</p>
+++++
+endif::[]
+
+
+
