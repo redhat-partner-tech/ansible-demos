@@ -43,3 +43,81 @@ ifdef::env-github[]
 ++++
 endif::[]
 
+// create a folder to put the installation into, put it into a thumb drive, or put it on a CD
+
+4) Install the Hypervisor by running the following command in the command prompt
+
+   $ sudo yum virt-manager
+   
+and open the hypervisor by typing the following in the command prompt
+
+   $ virt-manager
+   
+press "FILE" and click "NEW VIRTUAL MACHINE"
+
+5) Walk through the installation process...
+
+ - Choose how you would like to install the operating system. For this demo, chose "Local install media (ISO image or CDROM)"
+ 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Step_2_Create_VM.png">
+</p>
+++++
+endif::[]
+ 
+ - Choose ISO or CDROM install media. If the iso file is contained in a folder on your machine, select it and the operating system type being installed should be automatically detected
+ 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Step_3_Create_VM.png">
+</p>
+++++
+endif::[]
+ 
+ - Choose memory and CPU settings
+ 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Step_4_Create_VM.png">
+</p>
+++++
+endif::[]
+ 
+ - Create a disk image for the virtual machine (20.0 GB)
+ 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Step_5_Create_VM.png">
+</p>
+++++
+endif::[]
+ 
+ - Finish installation and wait till the installation process finishes
+ 
+ - Set your prefered language and continue
+ 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/VM_Setup_1.png">
+</p>
+++++
+endif::[]
+ 
+ - Change the required user settings (set a root password, create a user, and set an installation destination (austomatic partitioning))
+  
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/VM_Setup_2.png">
+</p>
+++++
+endif::[]
+
+ - Click begin installation and wait for your VM to power on
+ 
