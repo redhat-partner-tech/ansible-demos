@@ -43,5 +43,41 @@ ifdef::env-github[]
 ++++
 endif::[]
 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/VM_Setup_1.png">
+</p>
+++++
+endif::[]
+
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/VM_Setup_2.png">
+</p>
+++++
+endif::[]
+
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/VM_Setup_3.png">
+</p>
+++++
+endif::[]
+
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/VM_Setup_4.png">
+</p>
+++++
+endif::[]
+
+
+
+
+
 
 
