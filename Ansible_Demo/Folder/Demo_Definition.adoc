@@ -18,17 +18,13 @@ After running this demo, the user should have
 
 ## Products/Technology used
 
-### RHEL8
+### RHEL 8
 
 Red Hat Enterprise Linux (RHEL) is Red Hat's commercialized Linux distribution.
 
 ### Ansible
 
 Ansible is an automation platform that automates cumbersome, repetitive or complex tasks. The purpose of this demo is to automate a RHEL 8 Virtual Machine installation using Ansible and then run RH Insights. 
-
-### Kickstart
-
-A kickstart file is a simple text file that contains configuration information for a Red Hat Enterprise Linux installation.
 
 ### Virt-Manager
 
@@ -48,11 +44,15 @@ Insights is applicable for any system in your organization that needs frequent s
 
 * An up to date version of RHEL 8 on a laptop or client system
 
+* Sudo access to your system
+
+* Install Ansible
+
+* Installation media (USB drive, CD) (Optional)
+
+* Have the ISO already saved to installation media/laptop
+
 * TO DO: list memory allocation size
-
-* sudo access to your system
-
-* Installation media (USB drive, CD)
 
 ## STEPS
 
@@ -81,14 +81,7 @@ Or just run the following command into a command prompt
    $ sudo yum install ansible  
    
    
-3) Prepare an ISO File Using Kickstart
-
-// Use Kickstart to automate RHEL installation...
-
-// https://access.redhat.com/labsinfo/kickstartconfig
-
-
-// https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/performing_an_advanced_rhel_installation/creating-kickstart-files_installing-rhel-as-an-experienced-user
+3) Prepare an ISO File 
 
 Download the ISO  link:https://developers.redhat.com/products/rhel/download[here]
 
@@ -110,7 +103,31 @@ ifdef::env-github[]
 ++++
 endif::[]
 
+After logging in with your credentials, a popup will appear asking what you want to do with the file. Press "Save File" and save it to the installation media of your choice or save it to your laptop/client system.
 
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Download_ISO_2.png">
+</p>
+++++
+endif::[]
+
+From this point onwards, we will use Ansible playbooks to automate these steps
+
+4) Create VM from ISO using Ansible
+
+a. Create RHEL VM from ISO
+    
+b. Reboot
+ 
+c. Subscription-manager register
+  
+d. Update repos
+  
+e. Install AAP2
+    
+f. Demo
 
 
 // (create a purpose of this demo documentation list)...
