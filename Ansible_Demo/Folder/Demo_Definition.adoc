@@ -3,7 +3,7 @@
 
 ## Using Ansible to Install a RHEL 8 VM Running RH Insights
 
-The purpose of this demo is to familiarize the user with the deployment of applications with Ansible and show the user how they can run RH Insights on a virtualized RHEL 8 environment. At the end of this demo, the user should be more familiar with Ansible and how to deploy a virtual machine using an Ansible playbook
+The purpose of this demo is to familiarize the user with the deployment of applications with Ansible. At the end of this demo, the user should be more familiar with Ansible and how to deploy a virtual machine using an Ansible playbook
 
 
 ## The end result of running this demo
@@ -12,47 +12,43 @@ After running this demo, the user should have
 
 * Installed Ansible
 
-* Installed RH Virt-manager (a virtual mahcine environment running RHEL 8)
+* Installed RH Virt-manager (a virtual mahcine environment running RHEL 7)
 
-* RH Insights ready to use on the RHEL 8 VM
+* RHEL 7 VM
 
 ## Products/Technology used
 
-### RHEL 8
+### RHEL
 
 Red Hat Enterprise Linux (RHEL) is Red Hat's commercialized Linux distribution.
 
 ### Ansible
 
-Ansible is an automation platform that automates cumbersome, repetitive or complex tasks. The purpose of this demo is to automate a RHEL 8 Virtual Machine installation using Ansible and then run RH Insights. 
+Ansible is an automation platform that automates cumbersome, repetitive or complex tasks. The purpose of this demo is to automate a RHEL 7 Virtual Machine installation using Ansible.
 
 ### Virt-Manager
 
 Virt-manager is a desktop application that manages all of your virtual machines.
 
-Using a virtual machine is ideal for testing out applications (such as Insights) as it gives the user an environment that is low risk. If the virtual machine crashes while the user is testing app functionality, another virtual machine can be made with no ill effects on the actual hardware system.
+Using a virtual machine is ideal for testing out applications as it gives the user an environment that is low risk. If the virtual machine crashes while the user is testing app functionality, another virtual machine can be made with no ill effects on the actual hardware system.
 
-### link:https://www.redhat.com/en/technologies/management/smart-management[Smart Management] (Insights)
+// ### link:https://www.redhat.com/en/technologies/management/smart-management[Smart Management] (Insights)
 
-Red Hat Smart Management allows the user to securely manage their RHEL environment using Red Hat Satellite and Red Hat Insights. Smart Management spans across environments, can manage at scale, and can protect your environment from security threats. We will be focusing on Red Hat Insights for this demo.
+// Red Hat Smart Management allows the user to securely manage their RHEL environment using Red Hat Satellite and Red Hat Insights. Smart Management spans across environments, can manage at scale, and can protect your environment from security threats. We will be focusing on Red Hat Insights for this demo.
 
-Insights is applicable for any system in your organization that needs frequent system checks and is included with a RHEL subscription. Insights helps to identify and remediate threats to security, performance, availability, and stability to avoid issues, outages, and unplanned downtime, and to ensure your Red Hat environment is operating optimally. 
+// Insights is applicable for any system in your organization that needs frequent system checks and is included with a RHEL subscription. Insights helps to identify and remediate threats to security, performance, availability, and stability to avoid issues, outages, and unplanned downtime, and to ensure your Red Hat environment is operating optimally. 
 
 
 
 ## Requirements to run this demo
 
-* An up to date version of RHEL 8 on a laptop or client system
+* An up to date version of RHEL on a laptop or client system
 
 * Sudo access to your system
 
-* Install Ansible
+* Ansible
 
-* Installation media (USB drive, CD) (Optional)
-
-* Have the ISO already saved to installation media/laptop
-
-* TO DO: list memory allocation size
+* RH Virt-manager
 
 ## STEPS
 
@@ -74,61 +70,33 @@ You'll know your system is completely updated when you see the messsage saying
 
    Complete!
 
-2) Second, install Ansible. If you already have Ansible installed, you can skip this step. If you don't have Ansible installed, go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
+2) Second, make sure Ansible is installed. If you already have Ansible installed, you can skip this step. If you don't have Ansible installed, go to the Ansible Installation Guide linked here link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[(Install ansible)]
 
 Or just run the following command into a command prompt
 
    $ sudo yum install ansible  
    
+3) Make sure virt-manager is installed. If not already installed, run the following command in your terminal
+
+   $ sudo yum install virt-manager
    
-3) Prepare an ISO File 
-
-Download the ISO  link:https://developers.redhat.com/products/rhel/download[here]
-
-ifdef::env-github[]
-++++
-<p align="center">
-  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Download_ISO.png">
-</p>
-++++
-endif::[]
-
-The link will take you to a page allowing you to download the latest version of RHEL. Click the red download button and you will be redirected to the login page.
-
-ifdef::env-github[]
-++++
-<p align="center">
-  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Log_Into_RH_Account.png">
-</p>
-++++
-endif::[]
-
-After logging in with your credentials, a popup will appear asking what you want to do with the file. Press "Save File" and save it to the installation media of your choice or save it to your laptop/client system.
-
-ifdef::env-github[]
-++++
-<p align="center">
-  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/Download_ISO_2.png">
-</p>
-++++
-endif::[]
-
-From this point onwards, we will use Ansible playbooks to automate these steps
-
-4) Create VM from ISO using Ansible
-
-a. Create RHEL VM from ISO
-    
-b. Reboot
- 
-c. Subscription-manager register
   
-d. Update repos
-  
-e. Install AAP2
-    
-f. Demo
+4) Prepare a KVM Guest Image 
 
+// Download the ISO  link:https://developers.redhat.com/products/rhel/download[here]
+Login to access.redhat.com, click "Download" at the top and download RHEL 7.
+
+Instead of downloading the ISO file to do an installation, download the pre-built KVM Guest image. 
+
+ifdef::env-github[]
+++++
+<p align="center">
+  <img src="https://github.com/redhat-partner-tech/ansible-demos/blob/main/Ansible_Demo/Folder/Images/KVM_Guest_Image.png">
+</p>
+++++
+endif::[]
+
+From this point onwards, we will use Ansible playbooks to automate the creation of a VIrtual Machine
 
 // (create a purpose of this demo documentation list)...
 // Overview of demo
